@@ -41,3 +41,9 @@ For switching the namespace we can use this command
 ```bash
 kubens roboshop
 ```
+
+We the install k9s command line tool for better visibility of the kubernetes resources.
+
+```bash
+curl -sS https://webinstall.dev/k9s | bash
+```
