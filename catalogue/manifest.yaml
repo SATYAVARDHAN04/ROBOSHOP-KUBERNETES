@@ -1,4 +1,15 @@
 apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: catalogue
+  namespace: roboshop
+  labels:
+    app: catalogue
+    env: dev
+    tier: app
+data:
+---
+apiVersion: v1
 kind: Deplyment
 metadata:
   name: catalogue
