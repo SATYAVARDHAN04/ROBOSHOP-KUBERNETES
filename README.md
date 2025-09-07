@@ -48,7 +48,7 @@ We the install k9s command line tool for better visibility of the kubernetes res
 curl -sS https://webinstall.dev/k9s | bash
 ```
 
-**4. We then configure mongodb deployment,service **
+**4. We then configure mongodb deployment,service**
 
 _NOTE: We configure the mongodb service as ClusterIP service type this is beacuse there will only be communication with the mongodb pod within the cluster and the mondodb pod will not be exposed out._
 
@@ -64,5 +64,7 @@ b. Write a docker file for the test pod which includes all the essential connect
 c. Check the connectivity of the catalogue service to mongodb service via telnet
 
 **_NOTE:_**
+
 _Q) Why can't we check this by taking the exec of the catalogue container???_
+
 _A)We cant do this beacuse the docker image of catalogue is bare minimum containing only the necessary file and folder so without vioalting the best practises of docker we create a new pod that is used only to test the connectivity of one pod to other.._
