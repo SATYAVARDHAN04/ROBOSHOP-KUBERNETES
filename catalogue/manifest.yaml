@@ -8,9 +8,11 @@ metadata:
     env: dev
     tier: app
 data:
+  MONGO: "true"
+  MONGO_URL: "mongodb://mongodbsvc:27017/catalogue"
 ---
-apiVersion: v1
-kind: Deplyment
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: catalogue
   namespace: roboshop
@@ -19,7 +21,7 @@ metadata:
     env: dev
     tier: app
 spec:
-  replica: 1
+  replicas: 1
   selector:
     matchLabels:
       app: catalogue
