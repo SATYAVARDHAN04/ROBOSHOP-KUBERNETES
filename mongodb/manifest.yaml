@@ -8,7 +8,7 @@ metadata:
     env: dev
     tier: db
 spec:
-  replica: 1
+  replicas: 1
   selector:
     matchLabels:
       app: mongodb
