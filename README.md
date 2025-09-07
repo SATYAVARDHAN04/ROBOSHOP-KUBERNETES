@@ -67,4 +67,4 @@ c. Check the connectivity of the catalogue service to mongodb service via telnet
 
 _Q) Why can't we check this by taking the exec of the catalogue container???_
 
-_A)We cant do this beacuse the docker image of catalogue is bare minimum containing only the necessary file and folder so without vioalting the best practises of docker we create a new pod that is used only to test the connectivity of one pod to other.._
+_A)We cant do this beacuse the docker image of catalogue is bare minimum containing only the necessary file and folder so without vioalting the best practises of docker by installing required packages to test the connectivity we create a new pod that is used only to test the connectivity of one pod to other.._
