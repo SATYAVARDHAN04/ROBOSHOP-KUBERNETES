@@ -60,11 +60,11 @@ _NOTE: We configure the catalogue service as ClusterIP service type this is beac
 
 In order to do this follow the below steps
 
-a. Create a test pod named debug
+  a. Create a test pod named debug
 
-b. Write a docker file for the test pod which includes all the essential connectivity tools like telnet,ping etc
+  b. Write a docker file for the test pod which includes all the essential connectivity tools like telnet,ping etc
 
-c. Check the connectivity of the catalogue service to mongodb service via telnet
+  c. Check the connectivity of the catalogue service to mongodb service via telnet
 
 **_NOTE:_**
 
