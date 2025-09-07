@@ -37,6 +37,9 @@ spec:
       containers:
       - name: catalogue
         image: satyology/catalogue1
+        envFrom:
+        - configMapRef:
+            name: catalogue
 ---
 apiVersion: v1
 kind: Service
