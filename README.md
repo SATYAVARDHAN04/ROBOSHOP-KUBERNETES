@@ -1,7 +1,8 @@
 # IMPLEMENTING ROBOSHOP PROJECT USING KUBERNETES
 
-**SOME IMPORTANT POINTS AND COMMANDS TO NOTE** 0. Create a seperate namespace named "roboshop" for this entire project deployment
+**SOME IMPORTANT POINTS AND COMMANDS TO NOTE**
 
+0. Create a seperate namespace named "roboshop" for this entire project deployment
 1. For every microservice it is better to create deployment,service.
 2. Instead of running kubectl apply -f <filename> for every microservice we use an alias name as
 
