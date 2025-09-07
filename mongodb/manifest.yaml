@@ -41,7 +41,6 @@ spec:
     tier: db
   type: ClusterIP
   ports:
-  - name: mongodb
-    protocol: TCP
+  - protocol: TCP
     port: 27017
     targetPort: 27017
