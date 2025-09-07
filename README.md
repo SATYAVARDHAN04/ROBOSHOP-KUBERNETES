@@ -23,7 +23,9 @@ kp -n roboshop
 ```
 
 To avoid such extra typing of commands it is recommened to download **kubens**.
+
 **kubens** is a command line tool to switch between namespaces in kubernetes.
+
 link: https://github.com/ahmetb/kubectx?tab=readme-ov-file#manual-installation-macos-and-linux
 
 ```bash
