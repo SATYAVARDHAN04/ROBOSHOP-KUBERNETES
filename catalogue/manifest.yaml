@@ -6,20 +6,20 @@ metadata:
   labels:
     app: catalogue
     env: dev
-    tier: db
+    tier: app
 spec:
   replica: 1
   selector:
     matchLabels:
       app: catalogue
       env: dev
-      tier: db
+      tier: app
   template:
     metadata:
       labels:
         app: catalogue
         env: dev
-        tier: db
+        tier: app
     spec:
       containers:
       - name: catalogue
@@ -33,14 +33,14 @@ metadata:
   labels:
     app: catalogue
     env: dev
-    tier: db
+    tier: app
 spec:
   selector:
     app: catalogue
     env: dev
-    tier: db
+    tier: app
   type: ClusterIP
   ports:
   - protocol: TCP
-    port: 27017
-    targetPort: 27017
+    port: 8080
+    targetPort: 8080
